@@ -11,6 +11,8 @@
     "@testing-library/user-event": "^13.5.0",
     "apexcharts": "^3.43.0",
     "axios": "^1.6.2",
+    "flatpickr": "^4.6.13",
+    "flowbite": "^2.3.0",
     "framer-motion": "^10.16.16",
     "jspdf": "^2.5.1",
     "react": "^18.2.0",

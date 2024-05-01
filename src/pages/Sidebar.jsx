@@ -149,13 +149,13 @@ const Sidebar = () => {
       </button>
       <ul id="dropdown-example" className={isOpen2 ? '' : 'hidden'} py-2 space-y-2>
         <li>
-          <a href="#" className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-gray-700">projects</a>
+          <a href="/show-project" className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-gray-700">Projects</a>
         </li>
         <li>
-          <a href="#" className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-gray-700">Add Task</a>
+          <a href="/add-task" className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-gray-700">Add Task</a>
         </li>
         <li>
-          <a href="#" className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-gray-700">Add Project</a>
+          <a href="/add-project" className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-gray-700">Add Project</a>
         </li>
       </ul>
              </li>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Logo from "../../Images/06c1820c-d74a-4dff-a052-88d14580f029 3.png"
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -12,11 +12,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white border-gray-200  fixed top-0 w-full z-50 shadow-xl">
+    <nav className="bg-navBg border-gray-200  fixed top-0 w-full z-50 shadow-xl">
       <div className="flex flex-wrap items-center justify-between mx-auto p-4 mr-24 relative">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">Flowbite</span>
+          <img src={Logo} className="h-8" alt="Flowbite Logo" />
+          {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">Flowbite</span> */}
         </a>
 
         <div className="relative mt-3 w-1/3">
@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse relative ">
-            <h2 className='px-2'>Admin</h2>
+            <h2 className='px-2 text-navText'>Admin</h2>
           <button
             type="button"
             className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"

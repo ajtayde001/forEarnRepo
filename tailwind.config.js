@@ -39,7 +39,9 @@ module.exports = {
         arrowC:"#0B0B38",
         dotC: "#9EB8D9",
         buttonC:"#B32A64",
-        themeYellow:"#FFC917"
+        themeYellow:"#FFC917",
+        navText:"#5D7285",
+        navBg:"#F0F6FF"
       },
       
     },
