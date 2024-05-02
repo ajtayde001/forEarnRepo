@@ -5,13 +5,14 @@ import './App.css';
 import Sidebar from './pages/Sidebar';
 import Navbar from './componant/Navbar/Navbar';
 import Layout from './pages/Layout';
+import Login from './pages/Login/Login';
 
 function App() {
   return (
     <div className="App">
-     
-<Sidebar/>
-<Navbar/>
+     <Login/>
+{/* <Sidebar/> */}
+{/* <Navbar/> */}
 
     </div>
   );

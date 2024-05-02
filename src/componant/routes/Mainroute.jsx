@@ -14,6 +14,7 @@ import Complition from '../../pages/Complition/Complition'
 import Certification from '../../pages/Certification/Certification'
 import CertifyStatus from '../../pages/Certification/CertifyStatus'
 import CanOverallProgres from '../../pages/Complition/CanOverallProgres'
+import Login from '../../pages/Login/Login'
 
 function Mainroute() {
   return (
@@ -32,6 +33,7 @@ function Mainroute() {
         <Route path='/certification' element={<Certification/>}/>
         <Route path='/certify-status' element={<CertifyStatus/>}/>
         <Route path='/overall-progress' element={<CanOverallProgres/>}/>
+        <Route path='/login' element={<Login/>}/>
     </Routes>
   )
 }
