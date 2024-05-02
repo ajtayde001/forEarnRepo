@@ -29,7 +29,7 @@ function PaginationNav() {
       <ul className="flex gap-2">
         <li>
           <button
-            className={`flex text-sm bg-blue-800 rounded-full focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-600 ${
+            className={`flex text-sm  rounded-full focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-600 ${
               pageIndex === 0 ? "cursor-not-allowed" : ""
             }`}
             onClick={() => setPageIndex(0)}
@@ -44,7 +44,7 @@ function PaginationNav() {
         {renderPageLinks()}
         <li>
           <button
-            className={`flex text-sm bg-blue-800 rounded-full focus:ring-4 focus:ring-blue-300 dark:focus:ring-gray-600 ${
+            className={`flex text-sm  rounded-full focus:ring-4 focus:ring-blue-300 dark:focus:ring-gray-600 ${
               pageIndex === pageCount - 1 ? "cursor-not-allowed" : ""
             }`}
             onClick={() => setPageIndex(pageCount - 1)}

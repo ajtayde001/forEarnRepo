@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    'node_modules/flowbite-react/lib/esm/**/*.js'
   ],
   theme: {
     extend: {
@@ -41,11 +42,14 @@ module.exports = {
         buttonC:"#B32A64",
         themeYellow:"#FFC917",
         navText:"#5D7285",
-        navBg:"#F0F6FF"
+        navBg:"#F0F6FF",
+        buttonBg:"#0202f0"
       },
       
     },
   },
-  plugins: [],
+  plugins:  [
+    require('flowbite/plugin')
+],
 }
 

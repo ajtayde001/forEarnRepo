@@ -5,13 +5,16 @@ import PaginationNav from '../../componant/Pagination/Pagination';
 function Showintenship() {
   return (
     <div>
-     
-<div className='grid grid-cols-3 gap-4'>
+     <div className='align-start float-left '>
+      <h1 className='font-semibold text-coolGray text-lg'>INTERNSHIP</h1>
+     </div>
+     <br />
+<div className='grid grid-cols-3 gap-4 mt-4'>
 <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-white-800 ">
     
     <div className='flex justify-between'>
         <h1 className='font-bold text-xl'>Addelon</h1>
-        <button className="inline-flex items-center justify-center rounded bg-blue py-1.5 px-4 text-center font-sm text-white hover:bg-opacity-90 lg:px-8 xl:px-4">
+        <button className="inline-flex items-center justify-center rounded bg-buttonBg py-1.5 px-4 text-center font-sm text-white hover:bg-opacity-90 lg:px-8 xl:px-4">
                   View Applicant
                 </button>
                 
@@ -48,7 +51,7 @@ function Showintenship() {
     <div className='flex justify-between'>
         <h1 className='font-bold text-xl'>Addelon</h1>
         <a href="/hire-all">
-        <button className="inline-flex items-center justify-center rounded bg-blue py-1.5 px-4 text-center font-sm text-white hover:bg-opacity-90 lg:px-8 xl:px-4">
+        <button className="inline-flex items-center justify-center rounded bg-buttonBg py-1.5 px-4 text-center font-sm text-white hover:bg-opacity-90 lg:px-8 xl:px-4">
                   View Applicant
                 </button>
         </a>
@@ -85,7 +88,7 @@ function Showintenship() {
     
     <div className='flex justify-between'>
         <h1 className='font-bold text-xl'>Addelon</h1>
-        <button className="inline-flex items-center justify-center rounded bg-blue py-1.5 px-4 text-center font-sm text-white hover:bg-opacity-90 lg:px-8 xl:px-4">
+        <button className="inline-flex items-center justify-center rounded bg-buttonBg py-1.5 px-4 text-center font-sm text-white hover:bg-opacity-90 lg:px-8 xl:px-4">
                   View Applicant
                 </button>
                 
@@ -121,7 +124,7 @@ function Showintenship() {
     
     <div className='flex justify-between'>
         <h1 className='font-bold text-xl'>Addelon</h1>
-        <button className="inline-flex items-center justify-center rounded bg-blue py-1.5 px-4 text-center font-sm text-white hover:bg-opacity-90 lg:px-8 xl:px-4">
+        <button className="inline-flex items-center justify-center rounded bg-buttonBg py-1.5 px-4 text-center font-sm text-white hover:bg-opacity-90 lg:px-8 xl:px-4">
                   View Applicant
                 </button>
                 
@@ -157,7 +160,7 @@ function Showintenship() {
     
     <div className='flex justify-between'>
         <h1 className='font-bold text-xl'>Addelon</h1>
-        <button className="inline-flex items-center justify-center rounded bg-blue py-1.5 px-4 text-center font-sm text-white hover:bg-opacity-90 lg:px-8 xl:px-4">
+        <button className="inline-flex items-center justify-center rounded bg-buttonBg py-1.5 px-4 text-center font-sm text-white hover:bg-opacity-90 lg:px-8 xl:px-4">
                   View Applicant
                 </button>
                 

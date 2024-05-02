@@ -37,7 +37,7 @@ const Navbar = () => {
             aria-expanded="false"
             onClick={toggleMenu}
           >
-            <img className="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="user photo" />
+            <img className="w-8 h-8 rounded-full" src="https://media.istockphoto.com/id/1491507378/photo/side-view-of-a-young-black-woman-standing-whilst-listening-to-music-on-her-headphones-with.jpg?s=1024x1024&w=is&k=20&c=pqNRsQf_CVRx2jTzdq8FDAeGxDwMep5un9RctzC7Lbs=" alt="user photo" />
           </button>
 
           {/* Dropdown menu */}

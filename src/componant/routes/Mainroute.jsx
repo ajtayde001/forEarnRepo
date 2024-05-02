@@ -10,6 +10,10 @@ import AddProject from '../../pages/Projects/AddProject'
 import Maincard from '../Cards/Maincard'
 import Taskmain from '../../pages/Tasks/Taskmain'
 import Progresstask from '../../pages/Tasks/Progresstask'
+import Complition from '../../pages/Complition/Complition'
+import Certification from '../../pages/Certification/Certification'
+import CertifyStatus from '../../pages/Certification/CertifyStatus'
+import CanOverallProgres from '../../pages/Complition/CanOverallProgres'
 
 function Mainroute() {
   return (
@@ -24,6 +28,10 @@ function Mainroute() {
         <Route path='/hire-all' element={<Maincard/>}/>
         <Route path='/show-task' element={<Taskmain/>}/>
         <Route path='/progress-task' element={<Progresstask/>}/>
+        <Route path='/complition' element={<Complition/>}/>
+        <Route path='/certification' element={<Certification/>}/>
+        <Route path='/certify-status' element={<CertifyStatus/>}/>
+        <Route path='/overall-progress' element={<CanOverallProgres/>}/>
     </Routes>
   )
 }

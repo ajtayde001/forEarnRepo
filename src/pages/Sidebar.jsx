@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Layout from './Layout';
-
+import { Link } from 'react-router-dom';
 const Sidebar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -78,7 +78,7 @@ const Sidebar = () => {
             <li>
               <a
                 href="/"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-black group"
               >
                 <svg
                   className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-black"
@@ -96,7 +96,7 @@ const Sidebar = () => {
             <li>
       <button
         type="button"
-        className="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-black dark:hover:bg-gray-700"
+        className="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group dark:text-black "
         aria-controls="dropdown-example"
         onClick={toggleDropdown}
       >
@@ -116,20 +116,30 @@ const Sidebar = () => {
       </button>
       <ul id="dropdown-example" className={isOpen ? '' : 'hidden'} py-2 space-y-2>
         <li>
-          <a href="/add-intern" className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-gray-700">Add internship</a>
+          <Link className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group dark:text-black " to={"/add-intern"}>
+          Add internship
+          </Link>
+         
         </li>
         <li>
-          <a href="/show-intern" className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-gray-700">Show internship</a>
+          <Link  className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group dark:text-black " to={"/show-intern"}>
+
+          Show internship
+          </Link>
+          
         </li>
         <li>
-          <a href="/add-skill" className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-gray-700">Add Skills</a>
+          <Link className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group  dark:text-black " to={"/add-skill"}>
+          Add Skills
+          </Link>
+          
         </li>
       </ul>
              </li>
             <li>
       <button
         type="button"
-        className="flex items-center w-full p-2 text-base text-black-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-black dark:hover:bg-gray-700"
+        className="flex items-center w-full p-2 text-base text-black-900 transition duration-75 rounded-lg group  dark:text-black "
         aria-controls="dropdown-example"
         onClick={toggleDropdown2}
       >
@@ -149,20 +159,29 @@ const Sidebar = () => {
       </button>
       <ul id="dropdown-example" className={isOpen2 ? '' : 'hidden'} py-2 space-y-2>
         <li>
-          <a href="/show-project" className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-gray-700">Projects</a>
+          <Link  to={"/show-project"} className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group dark:text-black ">
+          Projects
+          </Link>
+          
         </li>
         <li>
-          <a href="/add-task" className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-gray-700">Add Task</a>
+          <Link to={"/add-task"} className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group  dark:text-black " >
+          Add Task
+          </Link>
+          
         </li>
         <li>
-          <a href="/add-project" className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-gray-700">Add Project</a>
+          <Link to={"/add-project"}  className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group  dark:text-black ">
+          Add Project
+          </Link>
+          
         </li>
       </ul>
              </li>
             <li>
               <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                href="/complition"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-black   group"
               >
                 <svg
                   className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-black"
@@ -179,8 +198,8 @@ const Sidebar = () => {
             </li>
             <li>
               <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                href="/certification"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-black  group"
               >
                 <svg
                   className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-black"
@@ -198,7 +217,7 @@ const Sidebar = () => {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-black  group"
               >
                 <svg
                   className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-black"
@@ -216,7 +235,7 @@ const Sidebar = () => {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-black  group"
               >
                 <svg
                   className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-black"

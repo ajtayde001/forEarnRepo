@@ -18,24 +18,27 @@ const AddTask = () => {
                 Task Title
               </label>
               <br />
-              <br />
-              <div className='flex gap-4 '>
+              <div className='flex gap-4 mt-4 items-center'>
               <textarea
                 rows={2}
                 // placeholder="Type your message"
-                className="w-1/2 h-16 rounded-full border-[2.5px] border-stroke bg-transparent py-2 px-5 text-black outline-none transition  disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-black "
+                className="w-1/2 h-12 rounded-full mt-6 border-[2.5px] border-stroke bg-transparent py-2 px-5 text-black outline-none transition  disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-black "
               ></textarea>
 
 
-              <div>
-              <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
-            <div className="border-b border-stroke py-4 px-6.5 dark:border-strokedark">
-              <h3 className="font-medium text-black dark:text-black">
-                Time and date
-              </h3>
+              <div className=''>
+              <div className=" flex  flex-col rounded-sm   bg-white shadow-default  ">
+            <div className="flex justify-between  ">
+            <label className=" block text-black dark:text-black float-left ml-10 font-semibold">
+                Start Date
+              </label>
+              <label className="block text-black dark:text-black float-left mr-10 font-semibold">
+                End Date
+              </label>
             </div>
+
             <div className="flex flex-col gap-5.5 p-6.5">
-              {/* <DatePickerOne /> */}
+              <DatePickerOne />
              
             </div>
           </div>

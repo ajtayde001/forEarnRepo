@@ -39,7 +39,7 @@ function Dashboard() {
   <h1 className='float-left font-semibold text-xl'>Tasks</h1>
 
  
-    <div className='p-3 h-40 w-96'>
+    <div className='p-4 h-40 w-96'>
         <Taskchart />
     </div>
     
